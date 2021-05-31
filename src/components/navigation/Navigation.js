@@ -12,10 +12,10 @@ export const Navigation = ({active}) => {
                         <a href="/">Home</a>
                     </li>
                     <li className="navigation__bar-list">
-                        <a href="#">Menu</a>
+                        <a href="#about-us">About us</a>
                     </li>
                     <li className="navigation__bar-list">
-                        <a href="#">About us</a>
+                        <a href="#">Menu</a>
                     </li>
                     <li className="navigation__bar-list">
                         <a href="#">Contact</a>

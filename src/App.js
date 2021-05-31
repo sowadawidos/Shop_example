@@ -8,12 +8,22 @@ import {
 } from "react-router-dom";
 
 import {Hero} from "./components/hero/Hero";
+import {AboutUs} from "./components/about_us/AboutUs";
+import {Header} from "./components/header/Header";
 
 function App() {
+    const [active, setActive] = useState();
+
+    const getToogle = toogle => {
+        setActive(toogle);
+    }
+
     return (
         <>
             <Router exact path="/" component={Hero}/>
-            <Hero/>
+            <Header getToogle={getToogle}/>
+            <Hero active={active}/>
+            <AboutUs/>
         </>
     )
 }

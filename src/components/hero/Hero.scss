@@ -1,5 +1,5 @@
 .hero {
-  height: 100vh;
+  height: calc(100vh - 80px);
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.1)), url("pexels-horizon-content-3915857.jpg");
   background-size: cover;
   background-position: center;
@@ -21,6 +21,8 @@
       text-transform: uppercase;
       text-align: center;
       border-bottom: 3px solid gold;
+      font-family: 'Noto Sans KR', sans-serif;
+      padding-bottom: 15px;
     }
     button {
       margin-top: 10px;
