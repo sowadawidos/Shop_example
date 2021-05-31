@@ -1,5 +1,5 @@
-# E-commerce shop project
-Simple shop project using React.
+# Pizza shop project
+Simple shop project using React. 
 
 # Technology
 - HTML
