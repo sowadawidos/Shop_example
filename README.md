@@ -1,11 +1,19 @@
 # E-commerce shop project
 Simple shop project using React.
 
+# Technology
+- HTML
+- SCSS
+- React
+- JavaScript
+- NPM
+- Firebase
+
 # Available Scripts
 
 In the project directory, you can run:
 
-## `npm install` and `npm start`
+`npm install` and `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
