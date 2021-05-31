@@ -1,0 +1,60 @@
+.header__bar {
+  .container {
+    height: 80px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    max-width: 1440px;
+    margin: auto;
+    .header__logo {
+      text-align: center;
+      h1 {
+        color: white;
+        font-family: 'Gloria Hallelujah', cursive, sans-serif;
+        font-size: 48px;
+        padding: 20px;
+        padding-left: 30px;
+        font-weight: 700;
+      }
+    }
+    .cart__button {
+      background-color: transparent;
+      border: none;
+      color: white;
+      font-size: 16px;
+      font-family: 'Gloria Hallelujah', cursive;
+      position: absolute;
+      top: 25px;
+      right: 50px;
+      cursor: pointer;
+      display: flex;
+      align-content: center;
+      img {
+        width: 35px;
+        height: 35px;
+        margin-right: 20px;
+      }
+      span {
+        background-color: red;
+        border-radius: 5px;
+        padding: 0.15rem 0.5rem;
+        font-size: 10px;
+        position: absolute;
+        top: 17px;
+        right: 3px;
+        font-weight: 700;
+      };
+    }
+    .navbar__button {
+      background-color: transparent;
+      border: none;
+      color: white;
+      font-size: 16px;
+      font-family: 'Gloria Hallelujah', cursive;
+      display: block;
+      position: absolute;
+      top: 17px;
+      right: 0;
+    }
+  }
+}
