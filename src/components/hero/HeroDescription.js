@@ -14,7 +14,7 @@ export const HeroDescription = () => {
     return (
         <>
             <div className="hero__description">
-                <h1>The greatest pizza ever !!</h1>
+                <h1>The greatest pizza everrrr !!</h1>
                 <button>Order now!</button>
             </div>
         </>
