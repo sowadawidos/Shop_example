@@ -1,0 +1,30 @@
+.contact {
+  height: calc(100vh - 160px);
+  background-color: #0F0F0F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .container {
+    padding-top: 100px;
+    max-width: 1444px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    color: white;
+    .contact__logo {
+      align-self: center;
+      text-align: center;
+      padding: 20px;
+      h1 {
+        font-size: 48px;
+        font-weight: 700;
+        font-family: 'Gloria Hallelujah', cursive, sans-serif;
+      }
+      h2 {
+        font-size: 36px;
+        font-weight: 700;
+        font-family: 'Gloria Hallelujah', cursive, sans-serif;
+      }
+    }
+  }
+}

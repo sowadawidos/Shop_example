@@ -21,7 +21,9 @@ export const Header = ({getToogle}) => {
             <header className={navBar ? "header__bar active" : "header__bar"}>
                 <div className="container">
                     <div className="header__logo">
-                        <h1>Pizzeria</h1>
+                        <a href="#">
+                            <h1>Pizzeria</h1>
+                        </a>
                     </div>
                     <NavBar getToogle={getToogle}/>
                 </div>

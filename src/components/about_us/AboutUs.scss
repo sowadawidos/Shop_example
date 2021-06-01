@@ -5,7 +5,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #130F10;
+  //background-color: #130F10;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.1)), url("pexels-ponyo-sakana-5088638.jpg");
+  background-position: center;
+  background-size: cover;
   .container {
     max-width: 1400px;
     display: flex;
@@ -25,11 +28,12 @@
         text-align: center;
         margin-bottom: 10px;
         font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 900;
       }
       p {
         color: white;
         text-align: center;
-        line-height: 30px;
+        line-height: 35px;
         font-size: 24px;
         font-family: 'Noto Sans KR', sans-serif;
       }

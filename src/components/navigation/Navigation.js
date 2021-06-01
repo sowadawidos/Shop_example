@@ -9,16 +9,16 @@ export const Navigation = ({active}) => {
             <div className={ active ? "navigation__bar-box" : "navigation__bar-box hide"}>
                 <ul className="navigation__bar">
                     <li className="navigation__bar-list">
-                        <a href="/">Home</a>
+                        <a href="#">Home</a>
                     </li>
                     <li className="navigation__bar-list">
                         <a href="#about-us">About us</a>
                     </li>
                     <li className="navigation__bar-list">
-                        <a href="#">Menu</a>
+                        <a href="#menu">Menu</a>
                     </li>
                     <li className="navigation__bar-list">
-                        <a href="#">Contact</a>
+                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
                 <div className="social">

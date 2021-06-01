@@ -15,7 +15,9 @@ export const HeroDescription = () => {
         <>
             <div className="hero__description">
                 <h1>The greatest pizza ever !!</h1>
-                <button>Order now!</button>
+                <a href="#menu">
+                    <button>Order now!</button>
+                </a>
             </div>
         </>
     )

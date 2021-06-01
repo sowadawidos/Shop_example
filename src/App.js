@@ -10,6 +10,8 @@ import {
 import {Hero} from "./components/hero/Hero";
 import {AboutUs} from "./components/about_us/AboutUs";
 import {Header} from "./components/header/Header";
+import {Menu} from "./components/menu/Menu";
+import {Contact} from "./components/contact/Contact";
 
 function App() {
     const [active, setActive] = useState();
@@ -20,11 +22,13 @@ function App() {
 
     return (
         <>
-            <Router exact path="/" component={Hero}/>
             <Header getToogle={getToogle}/>
             <Hero active={active}/>
             <AboutUs/>
+            <Menu/>
+            <Contact/>
         </>
+
     )
 }
 
