@@ -67,3 +67,12 @@
     }
   }
 }
+
+@media (max-width: 500px){
+  .header__bar {
+    .container {
+      max-width: 500px;
+      justify-content: flex-start;
+    }
+  }
+}

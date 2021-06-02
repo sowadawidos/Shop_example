@@ -6,10 +6,10 @@
   align-items: center;
   .container {
     padding-top: 100px;
-    max-width: 1444px;
+    width: 1444px;
     margin: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     color: white;
     .contact__logo {
       align-self: center;
@@ -24,6 +24,141 @@
         font-size: 36px;
         font-weight: 700;
         font-family: 'Gloria Hallelujah', cursive, sans-serif;
+      }
+    }
+    .contact__desc {
+      width: 240px;
+      margin-right: 25px;
+      h1 {
+        font-size: 20px;
+        padding-bottom: 7px;
+        border-bottom: 1px solid gold;
+      }
+      .contact-text {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+        margin-top: 20px;
+        width: 100%;
+        h2 {
+          width: 30%;
+         font-size: 14px;
+        }
+        p {
+          text-align: center;
+          width: 32%;
+          margin-top: 4px;
+        }
+      }
+      .contact-text-number {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        h2 {
+          width: 25%;
+          font-size: 14px;
+        }
+        p {
+          text-align: center;
+          width: 50%;
+        }
+      }
+      .contact-text-email {
+        display: flex;
+        align-items: center;
+        h2 {
+          width: 30%;
+          font-size: 14px;
+        }
+        p {
+          text-align: center;
+          width: 30%;
+          padding-left: 7px;
+        }
+      }
+      .contact-text-hours {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        h2 {
+          width: 50%;
+          font-size: 18px;
+        }
+        p {
+          text-align: center;
+          width: 50%;
+        }
+      }
+      .contact-text-payment {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        h2 {
+          width: 50%;
+          font-size: 18px;
+        }
+        p {
+          margin-left: 40px;
+          text-align: center;
+          width: 50%;
+        }
+        img {
+          width: 25px;
+          height: 25px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1020px) {
+  .contact {
+    .container {
+      flex-direction: column;
+      align-items: center;
+      width: 500px;
+      .contact__desc {
+        width: 400px;
+        margin-bottom: 50px;
+        .contact-text-number {
+          p {
+            width: 47%;
+          }
+        }
+        .contact-text-email {
+          p {
+            padding-left: 32px;
+          }
+        }
+        .contact-text-payment {
+          justify-content: center;
+        }
+        .contact-text-hours {
+          p {
+            padding-left: 62px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 500px){
+  .contact {
+    height: calc(100vh - 80px);
+    .container {
+      width: 300px;
+      .contact__desc {
+        width: 300px;
+        .contact-text-email {
+          p {
+            padding-left: 15px;
+          }
+        }
+        .contact-text-hours {
+          p {
+            padding-left: 32px;
+          }
+        }
       }
     }
   }

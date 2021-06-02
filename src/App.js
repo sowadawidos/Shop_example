@@ -12,6 +12,7 @@ import {AboutUs} from "./components/about_us/AboutUs";
 import {Header} from "./components/header/Header";
 import {Menu} from "./components/menu/Menu";
 import {Contact} from "./components/contact/Contact";
+import {Footer} from "./components/footer/Footer";
 
 function App() {
     const [active, setActive] = useState();
@@ -27,8 +28,8 @@ function App() {
             <AboutUs/>
             <Menu/>
             <Contact/>
+            <Footer/>
         </>
-
     )
 }
 

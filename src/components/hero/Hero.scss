@@ -42,3 +42,17 @@
     }
   }
 }
+@media (max-width: 800px) {
+  .hero {
+    .hero__description {
+      left: 8%;
+    }
+  }
+}
+@media (max-width: 480px) {
+  .hero {
+    .hero__description {
+      left: 5%;
+    }
+  }
+}
