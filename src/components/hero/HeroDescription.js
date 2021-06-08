@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from "react"
-import { init } from "ityped";
 
 export const HeroDescription = () => {
     return (

@@ -1,0 +1,201 @@
+.main__admin {
+  height: calc(100vh - 80px);
+  .container {
+    max-width: 1440px;
+    margin: auto;
+    .login__box {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      form {
+        width: 800px;
+        height: 700px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        box-shadow: 0 0 50px 5px #000000;
+        label {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          font-size: 24px;
+          padding: 15px;
+          input {
+            margin-top: 15px;
+            width: 400px;
+            height: 50px;
+            border-radius: 15px;
+            border: 1px solid black;
+          }
+        }
+        .checkbox {
+          display: flex;
+          flex-direction: unset;
+          align-items: center;
+          justify-content: center;
+          input {
+
+            margin: 0;
+            margin-right: 35px;
+            width: 30px;
+            height: 30px;
+          }
+        }
+        button {
+          margin-top: 15px;
+          padding: 10px 45px;
+          cursor: pointer;
+          border-radius: 25px;
+          border: none;
+          background-color: red;
+          color: white;
+          font-weight: 700;
+          &:hover {
+            transition: .2s ease-in-out;
+            box-shadow: 1px 4px 23px 3px rgba(248, 13, 13, 0.7);
+          }
+        }
+      }
+    }
+    .orders {
+      color: white;
+      height: 750px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      .orders__title {
+        padding: 30px;
+        font-size: 36px;
+        font-weight: 700;
+      }
+      .order__list {
+        width: 100%;
+        overflow-y: scroll;
+        .order__list-text {
+          padding: 20px;
+          display: flex;
+          justify-content: space-between;
+          border-bottom: 1px solid antiquewhite;
+          .personal__info {
+            width: 30%;
+          }
+          p {
+            width: 70%;
+          }
+        }
+      }
+    }
+    .add-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      button {
+        padding: 15px 35px;
+        font-size: 16px;
+        font-weight: 700;
+        color: white;
+        background-color: red;
+        border-radius: 30px;
+        border: none;
+        cursor: pointer;
+        &:hover {
+          transition: .2s ease-in-out;
+          box-shadow: 1px 4px 23px 3px rgba(248, 13, 13, 0.7);
+        }
+      }
+    }
+    .add__menu {
+      width: 800px;
+      height: 700px;
+      background-color: white;
+      border-radius: 25px;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      box-shadow: 0 0 50px 5px #000000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        label {
+          display: flex;
+          flex-direction: column;
+          font-size: 24px;
+          margin-bottom: 20px;
+          input {
+            margin-top: 5px;
+            width: 300px;
+            height: 45px;
+            border-radius: 5px;
+            border: 1px solid black;
+          }
+        }
+        button {
+          padding: 10px 45px;
+          cursor: pointer;
+          border-radius: 25px;
+          border: none;
+          background-color: red;
+          color: white;
+          font-weight: 700;
+          &:hover {
+            transition: .2s ease-in-out;
+            box-shadow: 1px 4px 23px 3px rgba(248, 13, 13, 0.7);
+          }
+        }
+      }
+    }
+  }
+}
+@media(max-width: 960px) {
+  .main__admin {
+    .container {
+      .orders {
+        .order__list {
+          .order__list-text {
+            flex-direction: column;
+            align-items: center;
+            .personal__info {
+              width: 100%;
+              margin-bottom: 25px;
+            }
+            p {
+              width: 100%;
+            }
+          }
+        }
+      }
+      .add__menu {
+        width: 500px;
+      }
+    }
+  }
+}
+@media(max-width: 550px) {
+  .main__admin {
+    .container {
+      .add__menu {
+        width: 350px;
+        form {
+          label {
+            font-size: 16px;
+            input {
+
+            }
+          }
+        }
+      }
+    }
+  }
+}
