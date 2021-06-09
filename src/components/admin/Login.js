@@ -26,7 +26,7 @@ export const Login = ({handleUser}) => {
                         <form onSubmit={handleSubmit}>
                             <label>
                                 Login:
-                                <input type="text" onChange={handleLogin}/>
+                                <input type="login" onChange={handleLogin}/>
                             </label>
                             <label>
                                 Password:

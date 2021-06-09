@@ -17,11 +17,20 @@ import {Panel} from "./components/admin/Panel";
 
 function App() {
     const [active, setActive] = useState();
+    const [cartItem, setCartItem] = useState([]);
 
     const getToogle = toogle => {
         setActive(toogle);
     }
 
+    const getCartItem = item => {
+        setCartItem(prev => [...prev, item]);
+    }
+
+    const removeItem = oneCart => {
+        const result = cartItem.filter(element => element.id !== oneCart.id);
+        setCartItem(result);
+    }
     return (
         <>
             <Router>
@@ -30,10 +39,10 @@ function App() {
                         <Panel/>
                     </Route>
                     <Route path="/">
-                        <Header getToogle={getToogle}/>
+                        <Header getToogle={getToogle} cartItem={cartItem} removeItem={removeItem}/>
                         <Hero active={active}/>
                         <AboutUs/>
-                        <Menu/>
+                        <Menu getCartItem={getCartItem}/>
                         <Contact/>
                         <Footer/>
                     </Route>
