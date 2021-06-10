@@ -10,7 +10,10 @@ export const Menu = ({getCartItem}) => {
     useEffect(() => {
         fetch(`${API}/menu`)
             .then(resp => resp.json())
-            .then(data => setMenu(data))
+            .then(data => setMenu(data.map(item => ({
+                ...item,
+                amount: 1
+            }))))
     }, [])
 
     return (
@@ -20,7 +23,7 @@ export const Menu = ({getCartItem}) => {
                     <h1 className="menu__title">Menu</h1>
                     <ul className="menu__box">
                         {
-                            menu && menu.map((el, key) => <MenuList item={el} getCartItem={getCartItem} key={key}
+                            menu && menu.map(el => <MenuList item={el} getCartItem={getCartItem} key={el.id}
                                                                     photoURL={el.photoURL} dishName={el.dishName}
                                                                     description={el.description} price={el.price}/>)
                         }

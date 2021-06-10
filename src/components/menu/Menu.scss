@@ -77,6 +77,17 @@
     }
   }
 }
+@media (max-width: 510px) {
+  .menu__main {
+    .container {
+      .menu__box {
+        .menu__article {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
 @media (max-width: 450px) {
   .menu__main {
     .container {

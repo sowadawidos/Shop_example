@@ -128,10 +128,18 @@
       height: 500px;
       .content__list {
         height: 300px;
-        width: 70%;
+        width: 90%;
         .content__list-item {
+          h2 {
+            text-align: center;
+            font-size: 18px;
+          }
           h3 {
             padding-left: 50px;
+            font-size: 18px;
+          }
+          input {
+            margin-left: 50px;
           }
         }
       }
@@ -152,11 +160,23 @@
         width: 90%;
         .content__list-item {
           font-size: 16px;
+          h2 {
+            font-size: 14px;
+          }
           h3 {
             padding-left: 20px;
+            font-size: 14px;
+          }
+          input {
+            padding: 1px 1px;
+            margin-left: 20px;
           }
           span {
             margin-left: 15px;
+           img {
+             width: 20px;
+             height: 20px;
+           }
           }
         }
       }

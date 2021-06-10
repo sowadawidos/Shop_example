@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 import pizza from "../../images/pizza.png";
 import {ModalCart} from "./ModalCart";
 
-export const Cart = ({cartItem, removeItem}) => {
+export const Cart = ({cartItem, removeItem, setCart, cart}) => {
     const [active, setActive] = useState(false)
 
     const handleClick = () => {
@@ -15,7 +15,7 @@ export const Cart = ({cartItem, removeItem}) => {
                 <img src={pizza} alt="cart"/>
                 <span>{cartItem.length}</span>
             </button>
-            <ModalCart active={active} handleClick={handleClick} cartItem={cartItem} removeItem={removeItem}/>
+            <ModalCart active={active} handleClick={handleClick} cartItem={cartItem} removeItem={removeItem} setCart={setCart} cart={cart}/>
         </>
     )
 }

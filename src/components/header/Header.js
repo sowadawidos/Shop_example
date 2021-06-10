@@ -3,7 +3,7 @@ import {NavBar} from "./NavBar";
 import "./Header.scss"
 import {Navigation} from "../navigation/Navigation";
 
-export const Header = ({getToogle, cartItem, removeItem}) => {
+export const Header = ({getToogle, cartItem, removeItem, setCart, cart}) => {
     const [navBar, setNavBar] = useState(false);
 
     const changeNav = () => {
@@ -25,7 +25,7 @@ export const Header = ({getToogle, cartItem, removeItem}) => {
                             <h1>Pizzeria</h1>
                         </a>
                     </div>
-                    <NavBar getToogle={getToogle} cartItem={cartItem} removeItem={removeItem}/>
+                    <NavBar getToogle={getToogle} cartItem={cartItem} removeItem={removeItem} setCart={setCart} cart={cart}/>
                 </div>
             </header>
         </>
