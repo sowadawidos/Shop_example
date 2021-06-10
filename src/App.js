@@ -19,7 +19,6 @@ function App() {
     const [cartItem, setCartItem] = useState([]);
     const [cart, setCart] = useState([]);
 
-
     const getToogle = toogle => {
         setActive(toogle);
     }

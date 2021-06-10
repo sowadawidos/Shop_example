@@ -18,7 +18,7 @@ export const Orders = () => {
                 <h1 className="orders__title">Orders: </h1>
                 <ul className="order__list">
                     {
-                        orders && orders.map(order => <OrderList person={order.person} city={order.city} address={order.address} post={order.post} number={order.number} fullOrder={order.fullOrder} />)
+                        orders && orders.map(order => <OrderList person={order.person} address={order.address} number={order.number} fullOrder={order.fullOrder} />)
                     }
                 </ul>
             </div>
