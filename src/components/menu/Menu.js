@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react"
 import "./Menu.scss"
 import {MenuList} from "./MenuList";
 
-const API = "my-json-server.typicode.com/sowadawidos/Shop_example";
+const API = "http://my-json-server.typicode.com/sowadawidos/Shop_example";
 
 export const Menu = ({getCartItem}) => {
     const [menu, setMenu] = useState();
@@ -16,6 +16,7 @@ export const Menu = ({getCartItem}) => {
             }))))
     }, [])
 
+    console.log(menu);
     return (
         <>
             <div id="menu" className="menu__main">

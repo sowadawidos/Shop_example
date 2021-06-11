@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 
-const API = "my-json-server.typicode.com/sowadawidos/Shop_example";
+const API = "http://my-json-server.typicode.com/sowadawidos/Shop_example";
 
 export const AddMenu = () => {
     const [inputs, setInputs] = useState({

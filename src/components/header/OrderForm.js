@@ -1,6 +1,6 @@
 import React, {useState} from "react"
 
-const API = "my-json-server.typicode.com/sowadawidos/Shop_example"
+const API = "http://my-json-server.typicode.com/sowadawidos/Shop_example"
 
 export const OrderForm = ({cart}) => {
     const [order, setOrder] = useState();

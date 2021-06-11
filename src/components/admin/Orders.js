@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
 import {OrderList} from "./OrderList";
 
-const OrderDatabase = "my-json-server.typicode.com/sowadawidos/Shop_example";
+const OrderDatabase = "http://my-json-server.typicode.com/sowadawidos/Shop_example";
 
 export const Orders = () => {
     const [orders, setOrders] = useState();
@@ -10,7 +10,7 @@ export const Orders = () => {
         fetch(`${OrderDatabase}/order`)
             .then(resp => resp.json())
             .then(data => setOrders(data))
-    }, [orders])
+    }, [])
 
     return (
         <>
