@@ -10,7 +10,7 @@ export const Orders = () => {
         fetch(`${OrderDatabase}/order`)
             .then(resp => resp.json())
             .then(data => setOrders(data))
-    }, [])
+    }, [orders])
 
     return (
         <>

@@ -48,6 +48,33 @@
 
     }
 
+    .order__form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 70%;
+      label {
+        font-size: 16px;
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+        input {
+          margin-top: 10px;
+          width: 400px;
+          height: 40px;
+          border-radius: 10px;
+          border: 1px solid black;
+          padding: 1px 10px;
+        }
+      }
+      button {
+        margin-top: 20px;
+        width: 150px;
+        padding: 15px 35px;
+      }
+    }
     .content__list {
       padding-top: 20px;
       width: 70%;
@@ -126,7 +153,20 @@
     height: 600px;
     .modal__content {
       height: 500px;
+      .order__form {
+        label {
+          input {
+            margin-top: 5px;
+            width: 300px;
+            height: 30px;
+          }
+        }
+        button {
+          margin-top: 10px;
+        }
+      }
       .content__list {
+        min-height: 200px;
         height: 300px;
         width: 90%;
         .content__list-item {
@@ -149,13 +189,28 @@
 @media (max-width: 640px) {
   .modal__box {
     width: 350px;
-    height: 500px;
+    height: 600px;
     .modal__content {
       height: 420px;
+      .order__form {
+        label {
+          font-size: 14px;
+          input {
+            margin-top: 5px;
+            width: 200px;
+            height: 30px;
+          }
+        }
+        button {
+          width: 100px;
+          padding: 10px 25px;
+        }
+      }
       .content__title {
         font-size: 24px;
       }
       .content__list {
+        min-height: 220px;
         height: 300px;
         width: 90%;
         .content__list-item {
@@ -168,7 +223,7 @@
             font-size: 14px;
           }
           input {
-            padding: 1px 1px;
+            padding: 1px 3px;
             margin-left: 20px;
           }
           span {

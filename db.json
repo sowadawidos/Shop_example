@@ -1,19 +1,71 @@
 {
-  "posts": [
+  "order": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "id": 0,
+      "person": "Dawid Test",
+      "city": "Test",
+      "address": "BLBLA 24",
+      "post": "51-515 BLABLABL",
+      "number": "555216252",
+      "fullOrder": "dsadsda 2x dasdas 512x, sdaf3x, faetrfd"
+    },
+    {
+      "person": "Dawid",
+      "address": "Mietka",
+      "number": "244124141",
+      "fullOrder": "Pizza margarita x1, Pizza neapolitana x1, ",
+      "id": 1
+    },
+    {
+      "person": "Dawid",
+      "address": "Mieczysława Orłowicza 8/4 50-539 Wrocław",
+      "number": "60618235",
+      "fullOrder": "Pizza margarita x1, Pizza neapolitana x1, ",
+      "id": 2
+    },
+    {
+      "person": "Dawid",
+      "address": "Mieczysława Orłowicza 8/4 50-539 Wrocław",
+      "number": "60618235",
+      "fullOrder": "Pizza margarita x1, Pizza neapolitana x1, ",
+      "id": 3
     }
   ],
-  "comments": [
+  "menu": [
+    {
+      "id": 0,
+      "photoURL": "https://i.imgur.com/mxa5DdL.jpg",
+      "dishName": "Pizza margarita",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, suscipit?",
+      "price": "13.99"
+    },
     {
       "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "photoURL": "https://i.imgur.com/aTOeDPf.jpg",
+      "dishName": "Pizza neapolitana",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, suscipit?",
+      "price": "15.99"
+    },
+    {
+      "id": 2,
+      "photoURL": "https://i.imgur.com/jV07Aeq.jpg",
+      "dishName": "Pizza oniono",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, suscipit?",
+      "price": "17.99"
+    },
+    {
+      "id": 3,
+      "photoURL": "https://i.imgur.com/QysF4KK.jpg",
+      "dishName": "Pizza jajowa",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, suscipit?",
+      "price": "15.99"
+    },
+    {
+      "id": 4,
+      "photoURL": "https://i.imgur.com/8CVJ2rP.jpg",
+      "dishName": "Pizza mozarella",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, suscipit?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, suscipit?",
+      "price": "16.99"
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

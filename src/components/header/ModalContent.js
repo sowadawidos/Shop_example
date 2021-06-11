@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react"
 import {ModalCartList} from "./ModalCartList";
 import {OrderForm} from "./OrderForm";
 
-export const ModalContent = ({cartItem, removeItem, setCart, cart, handleOrderBtn, orderBtn}) => {
+export const ModalContent = ({cartItem, removeItem, setCart, cart}) => {
     const [totalPrice, setTotalPrice] = useState(0);
 
 
@@ -17,7 +17,6 @@ export const ModalContent = ({cartItem, removeItem, setCart, cart, handleOrderBt
         }
     }, [cart])
 
-    console.log(cart);
     return (
         <>
             <div className="modal__content">
@@ -30,11 +29,8 @@ export const ModalContent = ({cartItem, removeItem, setCart, cart, handleOrderBt
                                                                         cart={cart} key={item.id}/>)
                     }
                 </ul>
-                {
-                    orderBtn && <OrderForm/>
-                }
                 <h1 className="content__total">Total price : {totalPrice.toFixed(2)} PLN</h1>
-                <button onClick={handleOrderBtn} className="content__order-btn">Next</button>
+                <OrderForm cart={cart}/>
             </div>
 
         </>

@@ -8,6 +8,27 @@
       "post": "51-515 BLABLABL",
       "number": "555216252",
       "fullOrder": "dsadsda 2x dasdas 512x, sdaf3x, faetrfd"
+    },
+    {
+      "person": "Dawid",
+      "address": "Mietka",
+      "number": "244124141",
+      "fullOrder": "Pizza margarita x1, Pizza neapolitana x1, ",
+      "id": 1
+    },
+    {
+      "person": "Dawid",
+      "address": "Mieczysława Orłowicza 8/4 50-539 Wrocław",
+      "number": "60618235",
+      "fullOrder": "Pizza margarita x1, Pizza neapolitana x1, ",
+      "id": 2
+    },
+    {
+      "person": "Dawid",
+      "address": "Mieczysława Orłowicza 8/4 50-539 Wrocław",
+      "number": "60618235",
+      "fullOrder": "Pizza margarita x1, Pizza neapolitana x1, ",
+      "id": 3
     }
   ],
   "menu": [
