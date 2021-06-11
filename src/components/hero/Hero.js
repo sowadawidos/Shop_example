@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import "./Hero.scss"
-import {Header} from "../header/Header";
 import {Navigation} from "../navigation/Navigation";
 import {HeroDescription} from "./HeroDescription";
 

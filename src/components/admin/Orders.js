@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
 import {OrderList} from "./OrderList";
 
-const OrderDatabase = "http://localhost:3000";
+const OrderDatabase = "my-json-server.typicode.com/sowadawidos/Shop_example";
 
 export const Orders = () => {
     const [orders, setOrders] = useState();

@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react"
+import React from "react"
 import "./Cart.scss";
 import {ModalContent} from "./ModalContent";
 import {ModalHeader} from "./ModalHeader";

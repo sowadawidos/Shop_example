@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from "react"
+import React, { useState} from "react"
 import {NavBar} from "./NavBar";
 import "./Header.scss"
-import {Navigation} from "../navigation/Navigation";
 
 export const Header = ({getToogle, cartItem, removeItem, setCart, cart}) => {
     const [navBar, setNavBar] = useState(false);

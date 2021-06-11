@@ -1,6 +1,6 @@
-import React, {useState, useEffect} from "react"
+import React, {useState} from "react"
 
-const API = "http://localhost:3000"
+const API = "my-json-server.typicode.com/sowadawidos/Shop_example"
 
 export const OrderForm = ({cart}) => {
     const [order, setOrder] = useState();
