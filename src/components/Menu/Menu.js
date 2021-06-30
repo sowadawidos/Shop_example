@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react"
+import React from "react"
 import "./Menu.scss"
 import {MenuList} from "./MenuList";
 

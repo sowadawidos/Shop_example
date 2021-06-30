@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import facebook from "../../images/facebook.svg"
 import instagram from "../../images/instagram.svg"
 import "./Footer.scss"

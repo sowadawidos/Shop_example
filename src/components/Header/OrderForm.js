@@ -33,7 +33,7 @@ export const OrderForm = ({cart, sendOrder}) => {
             })
         }
     }
-    console.log(order);
+
     const handleSendOrder = event => {
         event.preventDefault();
         setErrors('');

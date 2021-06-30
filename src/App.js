@@ -7,13 +7,13 @@ import {
 } from "react-router-dom";
 import {db} from "./API/API"
 
-import {Hero} from "./components/hero/Hero";
-import {AboutUs} from "./components/about_us/AboutUs";
-import {Header} from "./components/header/Header";
-import {Menu} from "./components/menu/Menu";
-import {Contact} from "./components/contact/Contact";
-import {Footer} from "./components/footer/Footer";
-import {Panel} from "./components/admin/Panel";
+import {Hero} from "./components/Hero/Hero";
+import {AboutUs} from "./components/About_us/AboutUs";
+import {Header} from "./components/Header/Header";
+import {Menu} from "./components/Menu/Menu";
+import {Contact} from "./components/Contact/Contact";
+import {Footer} from "./components/Footer/Footer";
+import {Panel} from "./components/Admin/Panel";
 
 function App() {
     const [active, setActive] = useState();

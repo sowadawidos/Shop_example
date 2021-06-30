@@ -1,6 +1,5 @@
-import React, { useState, useEffect, useRef } from "react"
+import React from "react"
 import "./AboutUs.scss";
-import {init} from "ityped";
 
 export const AboutUs = () => {
 

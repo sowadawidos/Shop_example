@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, {useState} from "react"
 import "./Panel.scss";
 import {Orders} from "./Orders";
 import {AddMenu} from "./AddMenu";

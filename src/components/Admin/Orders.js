@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import {OrderList} from "./OrderList";
 
 export const Orders = ({orders}) => {
-    
+
     return (
         <>
             <div className="orders">

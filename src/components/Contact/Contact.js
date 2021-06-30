@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./Contact.scss";
-import cash from "../contact/money.svg";
-import desktop from "../contact/desktop.svg";
-import card from "../contact/credit-card.svg";
+import cash from ".//money.svg";
+import desktop from ".//desktop.svg";
+import card from ".//credit-card.svg";
 
 export const Contact = () => {
     return (

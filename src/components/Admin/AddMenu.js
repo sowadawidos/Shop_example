@@ -1,9 +1,6 @@
-import React, { useState, useEffect } from "react"
-import {ModalHeader} from "../header/ModalHeader";
+import React, {useState} from "react"
 
-const API = "http://my-json-server.typicode.com/sowadawidos/Shop_example";
-
-export const AddMenu = ({addMenu, handleClick}) => {
+export const AddMenu = ({addMenu}) => {
     const [inputs, setInputs] = useState({
         photoURL: "",
         dishName: "",

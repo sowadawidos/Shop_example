@@ -1,6 +1,6 @@
 import React from "react"
 import "./Hero.scss"
-import {Navigation} from "../navigation/Navigation";
+import {Navigation} from "../Navigation/Navigation";
 import {HeroDescription} from "./HeroDescription";
 
 export const Hero = ({active}) => {
