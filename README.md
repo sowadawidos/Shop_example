@@ -22,4 +22,4 @@ The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
 # Demo
-Here is a demo of the website: [https://shop-example-1a675.web.app/](DEMO)
+Here is a demo of the website: [DEMO](https://shop-example-1a675.web.app/)
