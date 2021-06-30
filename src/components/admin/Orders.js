@@ -1,17 +1,8 @@
 import React, { useState, useEffect } from "react"
 import {OrderList} from "./OrderList";
 
-const OrderDatabase = "http://my-json-server.typicode.com/sowadawidos/Shop_example";
-
-export const Orders = () => {
-    const [orders, setOrders] = useState();
-
-    useEffect(() => {
-        fetch(`${OrderDatabase}/order`)
-            .then(resp => resp.json())
-            .then(data => setOrders(data))
-    }, [])
-
+export const Orders = ({orders}) => {
+    
     return (
         <>
             <div className="orders">

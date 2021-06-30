@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react"
 import deleteButton from "./delete.svg";
 
 export const ModalCartList = ({dishName, itemIdx, price, item, removeItem, setCart, cart, key}) => {
-    const [quantity, setQuantity] = useState("1");
+    const [quantity, setQuantity] = useState(1);
 
     useEffect(() => {
         setCart(prev => [...prev, ({

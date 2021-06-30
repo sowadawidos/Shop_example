@@ -6,7 +6,7 @@ import {Login} from "./Login";
 const loginCorrect = "admin1";
 const passwordCorrect = "admin1";
 
-export const Panel = () => {
+export const Panel = ({orders, addMenu}) => {
     const [user, setUser] = useState(false);
 
     const handleUser = (login, password) => {
@@ -23,7 +23,7 @@ export const Panel = () => {
             {
                 user ? <>
 
-                    <MainAdminPanel/>
+                    <MainAdminPanel orders={orders} addMenu={addMenu}/>
                     </>
                     :
                     <Login handleUser={handleUser}/>

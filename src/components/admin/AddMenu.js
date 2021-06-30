@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react"
+import {ModalHeader} from "../header/ModalHeader";
 
 const API = "http://my-json-server.typicode.com/sowadawidos/Shop_example";
 
-export const AddMenu = () => {
+export const AddMenu = ({addMenu, handleClick}) => {
     const [inputs, setInputs] = useState({
-        id: "",
         photoURL: "",
         dishName: "",
         description: "",
@@ -21,17 +21,7 @@ export const AddMenu = () => {
 
     const handleSubmit = event => {
         event.preventDefault();
-        fetch(`${API}/menu`, {
-            method: "POST",
-            body: JSON.stringify(inputs),
-            headers: {
-                "Content-Type": "application/json"
-            }
-        })
-            .then(response => alert("dodano do bazy danych menu"))
-            .catch(error => {
-                console.log(error)
-            })
+        addMenu(inputs);
     }
 
     return (
