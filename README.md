@@ -1,5 +1,5 @@
 # Pizza shop project
-Simple shop project using React. 
+Simple shop project using React, with admin panel on '/admin' address. (login: admin1 and password: admin1)
 
 # Technology
 - HTML
